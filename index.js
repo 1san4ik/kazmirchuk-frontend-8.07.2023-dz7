@@ -6,12 +6,6 @@ alert(userRow1+userRow2+userRow3)
 
 // Task 2
 const numberUser = prompt('Введіть п\'ятизначне число:')
-const numberUser2 = numberUser.toString()
-console.log('numberUser2 =>' + numberUser2)
-const numberUser3 = numberUser2.split('')
-console.log('numberUser3 =>' + numberUser3)
-const numberUser4 = numberUser3.map(Number)
-console.log('numberUser4 =>' + numberUser4)
-
-const numberOutput = numberUser4.join(' ')
+const numberUser2 = numberUser.toString().split('').map(Number)
+const numberOutput = numberUser2.join(' ')
 alert('Цифри у вихідному порядку: ' + numberOutput)
